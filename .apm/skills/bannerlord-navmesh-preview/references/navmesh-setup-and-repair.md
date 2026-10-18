@@ -16,12 +16,12 @@ It must contain `scene.xscene`, `terrain.bin`, and `navmesh.bin`. The maintained
 C:/Users/Joe/Desktop/bannerlord-navmesh-studio
 ```
 
-The canonical preview script is `.apm/skills/bannerlord-navmesh-preview/scripts/render_navmesh_preview.py`; its instructions are in the adjacent `SKILL.md`. It loads `blnav.nmg9`, `blnav.rnm1`, `blnav.terrain`, and `blnav.xscene` from the Studio checkout. Preview dependencies include NumPy, Matplotlib, Pillow, and lz4. Experimental repairs additionally need SciPy, Shapely, ContourPy, and Triangle. Use the project's working Python environment; do not substitute an old global renderer or parser. The commands below use the workspace's RTK wrapper.
+The canonical preview script is `submodules/DADG-Agent/.apm/skills/bannerlord-navmesh-preview/scripts/render_navmesh_preview.py`; its instructions are in the adjacent `SKILL.md`. It loads `blnav.nmg9`, `blnav.rnm1`, `blnav.terrain`, and `blnav.xscene` from the Studio checkout. Preview dependencies include NumPy, Matplotlib, Pillow, and lz4. Experimental repairs additionally need SciPy, Shapely, ContourPy, and Triangle. Use the project's working Python environment; do not substitute an old global renderer or parser. The commands below use the workspace's RTK wrapper.
 
 Confirm the interfaces before a repair session:
 
 ```powershell
-rtk python .apm/skills/bannerlord-navmesh-preview/scripts/render_navmesh_preview.py --help
+rtk python submodules/DADG-Agent/.apm/skills/bannerlord-navmesh-preview/scripts/render_navmesh_preview.py --help
 rtk python tools/navmesh_repair/check_candidate.py --help
 rtk python tools/navmesh_repair/inventory_islands.py --help
 rtk python tools/navmesh_repair/island_rebuild.py --help
@@ -42,12 +42,12 @@ The native format has identity and topology constraints beyond visible geometry.
 The preview bounds order is unusual and must be written exactly as `X0 X1 Y0 Y1`:
 
 ```powershell
-rtk python .apm/skills/bannerlord-navmesh-preview/scripts/render_navmesh_preview.py `
+rtk python submodules/DADG-Agent/.apm/skills/bannerlord-navmesh-preview/scripts/render_navmesh_preview.py `
   "../../DellarteDellaGuerraMap/SceneObj/Main_map" `
   --bounds 320 730 600 1025 `
   --output "tools/navmesh_repair/output/baseline.png"
 
-rtk python .apm/skills/bannerlord-navmesh-preview/scripts/render_navmesh_preview.py `
+rtk python submodules/DADG-Agent/.apm/skills/bannerlord-navmesh-preview/scripts/render_navmesh_preview.py `
   "../../DellarteDellaGuerraMap/SceneObj/Main_map" `
   --navmesh "tools/navmesh_repair/output/candidate.bin" `
   --bounds 320 730 600 1025 `

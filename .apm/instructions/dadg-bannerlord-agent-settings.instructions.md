@@ -22,6 +22,12 @@ These are the project settings that the generic `bannerlord-agent` skills refer 
   (`_tickCount += dt;`). Lines 43 onward sit behind an early return. Use it only for one-shot
   evaluation breakpoints; never put a logging breakpoint there.
 
+## Tool checkouts
+
+- `BANNERLORD_CRAFTING_TOOL` defaults to `src/submodules/bannerlord-agent/tools/BannerlordCraftingTool.CLI`.
+- `BANNERLORD_NAVMESH_STUDIO` defaults to `src/submodules/bannerlord-agent/tools/BannerlordSceneStudio`.
+- Initialise them with `git submodule update --init --recursive` from the Core repo root.
+
 ## Logs
 
 - NLog file: `../log/dadg.log`, relative to `src/`.

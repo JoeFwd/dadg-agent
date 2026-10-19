@@ -15,6 +15,8 @@ These are the project settings that the generic `bannerlord-agent` skills refer 
 - The Standalone profile in `DellarteDellaGuerra.Integration/Properties/launchSettings.json`
   sets `GABP_SERVER_PORT`, `GABP_TOKEN`, `GABS_GAME_ID` and `GABS_BRIDGE_PATH`. `bridge.json`
   must match that profile's port and token.
+- CLR exception breakpoints: `src/.rider-debugger-settings`, enforced by the
+  rider-clr-exception-override Rider plugin. Edit the exception list there, not in Rider.
 - Safe per-frame evaluation anchor:
   `src\DellarteDellaGuerra\DisplayCompilingShaders\CompilingShaderNotifier.cs` line 37
   (`_tickCount += dt;`). Lines 43 onward sit behind an early return. Use it only for one-shot

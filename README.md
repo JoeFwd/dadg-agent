@@ -5,6 +5,11 @@ Bannerlord mod. It layers DADG-specific context on top of the generic
 [bannerlord-agent](https://github.com/JoeFwd/bannerlord-agent) harness, which supplies the
 skills, hooks, playtester agent, MCP bridge and generic brain.
 
+New to APM? See bannerlord-agent's
+[Quick start](https://github.com/JoeFwd/bannerlord-agent#quick-start) and
+[What it installs on your machine](https://github.com/JoeFwd/bannerlord-agent#what-it-installs-on-your-machine).
+This package adds instructions, skills and brain notes only; it installs nothing itself.
+
 ## Contents
 
 | Path | What it is |

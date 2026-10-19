@@ -8,7 +8,9 @@ skills, hooks, playtester agent, MCP bridge and generic brain.
 New to APM? See bannerlord-agent's
 [Quick start](https://github.com/JoeFwd/bannerlord-agent#quick-start) and
 [What it installs on your machine](https://github.com/JoeFwd/bannerlord-agent#what-it-installs-on-your-machine).
-This package adds instructions, skills and brain notes only; it installs nothing itself.
+This package adds instructions, skills and brain notes, and installs nothing itself. Its
+`apm.yml` re-declares bannerlord-agent's MCP servers, because APM skips servers declared two
+packages deep. Copy the `mcp:` block again whenever a bannerlord-agent bump changes it.
 
 ## Contents
 

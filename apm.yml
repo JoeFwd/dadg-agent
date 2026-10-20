@@ -8,7 +8,7 @@ targets:
 includes: auto
 dependencies:
   apm:
-    - JoeFwd/bannerlord-agent#v0.1.8
+    - JoeFwd/bannerlord-agent#v0.1.9
   mcp:
     # Copied from bannerlord-agent's apm.yml: APM skips MCP servers declared two packages deep,
     # so this layer re-declares them for the projects that depend on it. Keep in sync on bumps.

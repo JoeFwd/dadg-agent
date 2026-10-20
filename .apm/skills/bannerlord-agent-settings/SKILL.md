@@ -1,5 +1,10 @@
 ---
-description: DADG values for the generic bannerlord-agent skills (debug config, logs, anchors, cheats, installs) and where DADG knowledge lives.
+name: bannerlord-agent-settings
+description: >
+  DADG values for the generic bannerlord-agent skills - Rider project_path and run
+  configurations, CLR exception settings, the safe evaluation-breakpoint anchor, tool
+  checkouts, log files, the DADGNewGame option, cheat command families, module folders and
+  game installs. Load before any Rider, JetBrains debugger, GABS, playtest or log work.
 ---
 
 # DADG Bannerlord Agent Settings
@@ -75,12 +80,4 @@ Map branches matter. For example, the campaign-map distance cache differs betwee
 `DellarteDellaGuerraMap` `develop` and `1.4/complete-navmesh`. Check the map repo's branch
 before trusting map behaviour.
 
-## Knowledge brains
-
-- DADG brain: `src/submodules/dadg-agent/brain/` (start at `INDEX.md`). This holds mod
-  features, map and settlements, incidents, branches and workflow.
-- Generic brain: `src/submodules/bannerlord-agent/brain/`. This holds engine, format and tool
-  lessons true for any mod.
-- Write new lessons to these submodule checkouts, never to `apm_modules/` or `.claude/`.
-  A lesson with a generic rule and a DADG incident becomes two linked notes. The Obsidian vault
-  is `src/submodules/`, so links between the two brains resolve.
+Where DADG knowledge lives (the two brains) is in the always-on DADG context.

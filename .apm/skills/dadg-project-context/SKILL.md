@@ -26,7 +26,7 @@ Read these references as needed:
 Before investigating a DADG bug or feature, grep the DADG brain (`brain/**/*.md` in the
 dadg-agent repo; start at `brain/INDEX.md`) and the generic Bannerlord brain shipped by
 bannerlord-agent. Machine and project values (debug config, log paths, anchors) are in the
-DADG Bannerlord agent settings instruction.
+`bannerlord-agent-settings` skill.
 
 For runtime debugging, CLR exceptions, Rider/GABS workflows, or fix/relaunch/verify
 cycles, use the `bannerlord-debug` skill after loading the relevant project context.

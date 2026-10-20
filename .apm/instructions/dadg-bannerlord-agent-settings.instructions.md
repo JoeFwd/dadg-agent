@@ -8,13 +8,13 @@ These are the project settings that the generic `bannerlord-agent` skills refer 
 
 ## Rider / JetBrains debugging
 
-- Run configuration: `DellarteDellaGuerra.Integration: Standalone.WarSails` (adds `NavalDLC`).
-  Use it for playtests; plain `Standalone` lacks War Sails.
 - `project_path`: `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/DellarteDellaGuerra.Core/src`.
   Pass it on every JetBrains MCP call. The `&` is literal; never HTML-escape it.
-- The Standalone.WarSails profile in `DellarteDellaGuerra.Integration/Properties/launchSettings.json`
-  sets `GABP_SERVER_PORT`, `GABP_TOKEN`, `GABS_GAME_ID` and `GABS_BRIDGE_PATH`. `bridge.json`
-  must match that profile's port and token.
+- Run configuration: ask the user (see `bannerlord-gabs-start`). The GABS-enabled profiles in
+  `DellarteDellaGuerra.Integration/Properties/launchSettings.json` are `Standalone` and
+  `Standalone.WarSails` (adds `NavalDLC`). Both set `GABP_SERVER_PORT`, `GABP_TOKEN`,
+  `GABS_GAME_ID` and `GABS_BRIDGE_PATH`; `bridge.json` must match the chosen profile's port
+  and token.
 - CLR exception breakpoints: `src/.rider-debugger-settings`, enforced by the
   rider-clr-exception-override Rider plugin. Edit the exception list there, not in Rider.
 - Safe per-frame evaluation anchor:

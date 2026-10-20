@@ -23,20 +23,26 @@ packages deep. Copy the `mcp:` block again whenever a bannerlord-agent bump chan
 
 ## Use
 
-The DADG Core repo mounts this as `src/submodules/dadg-agent` and depends on it by local path:
+The DADG Core repo depends on a release tag, so it installs exactly what is shipped:
 
 ```yaml
 dependencies:
   apm:
-    - ./submodules/dadg-agent
+    - JoeFwd/dadg-agent#v0.2.0
 ```
 
-`apm install` then pulls `JoeFwd/bannerlord-agent` at the pinned tag. To change the generic
-harness:
-1. Edit the `bannerlord-agent` checkout.
-2. Push and tag it.
-3. Bump the tag in this `apm.yml`.
-4. Run `apm install`.
+`apm install` then pulls `JoeFwd/bannerlord-agent` at the tag pinned here. Core also mounts this
+repo as `src/submodules/dadg-agent`, but only as the editing checkout. Don't depend on it by
+local path: APM copies the submodule's `.git` file into `apm_modules/_local/`, and
+`apm compile` skips any folder that contains `.git`, so Codex's `AGENTS.md` silently loses
+these instructions.
+
+To change this package or the generic harness:
+1. Edit the `dadg-agent` or `bannerlord-agent` checkout.
+2. Push and tag it. If you tagged bannerlord-agent, bump its tag in this `apm.yml`, then push
+   and tag this package too.
+3. Bump the dadg-agent tag in Core's `apm.yml`.
+4. Run `apm update --yes`.
 
 ## Brain
 

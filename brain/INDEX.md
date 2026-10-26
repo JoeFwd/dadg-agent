@@ -49,7 +49,8 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[feudal-player-entry-brainstorm]] (reference): Brainstorm: give the player a ladder into the feudal system through gentry rungs (retaining, manors, offices, knighthood, promise of a barony).
 - [[feudal-succession-rule]] (reference): Male-preference primogeniture with representation: own line, then siblings through the father, then clan head, else vacant.
 - [[feudal-system-audit-findings]] (reference): Audit of the feudal system (doc/feudal-system-analysis.md): gaps found between design and code, including the engine-boundary issues that shaped later work.
-- [[feudal-title-transfer-decision]] (decision): Decision: occupying a seat does not move the dignity; only grant, gift, barter, a king's decision, or peace transfers it.
+- [[feudal-title-transfer-decision]] (decision): Decision: occupying a seat does not move the dignity; only grant, gift, barter, a king's decision, or an administrative change transfers it.
+- [[king-keeps-open-fiefs]] (decision): Decision (2026-10-26): the post-capture claimant vote is removed; the king keeps open fiefs, and leaving or destroyed clans keep no claim.
 - [[feudal-titles-overview]] (reference): Overview of the DADG feudal title system: static de jure tree from config, hero holders, occupants, claims, succession, encyclopedia UI.
 
 ## feature-other
@@ -74,7 +75,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[private-war-scarcity-stacked-filters]] (incident): Why private wars were rare: five stacked filters, and the NoActiveWar dispersal that killed armies.
 - [[private-war-scoring-v2]] (reference): Scoring v2 weights for private wars: goal 50, town 30, castle 10, prisoners 5 each, normalised battle bump capped at 50.
 - [[private-war-sides-via-title-chain]] (decision): Decision: a clan's side in a private war is found by walking up the feudal title chain to the nearest belligerent principal, cutting at kingdom borders.
-- [[private-war-synthetic-capture]] (decision): Decision: because same-kingdom AI sieges never form an assault MapEvent, DADG transfers the goal when siege preparations complete.
+- [[private-war-real-siege-assault]] (decision): Decision (2026-10-26): private-war sieges end in a real wall assault the player can join; a won fief goes to the interim owner, not the king.
 - [[private-wars-manual-test-howto]] (howto): How to playtest private wars by hand: load the privatewartest save, use campaign.* console commands, what confirms success.
 - [[private-wars-overview]] (reference): Overview of DADG private wars: map-represented casus-belli wars between clans of one kingdom, driven by DADG, with score, fatigue and revert rules.
 - [[private-wars-stay-in-kingdom-substrate]] (decision): Decision: private wars keep both clans in their kingdom and manufacture hostility pair-by-pair, rejecting splinter kingdoms and lone-clan ejection.

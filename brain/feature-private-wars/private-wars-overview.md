@@ -5,7 +5,7 @@ type: reference
 topic: feature-private-wars
 tags: [private-wars, overview]
 sources: [doc/feudal-private-wars-design.md, doc/feudal-and-private-wars-guide.md, doc/feudal-private-wars-manual-test-guide.md]
-updated: 2026-10-18
+updated: 2026-10-26
 ---
 
 # Private wars overview
@@ -17,12 +17,12 @@ Key rules
 - Frozen main goal: the settlement driving the war is fixed at declaration, castles and towns only ([[private-war-frozen-goal-and-fatigue]]).
 - Scoring v2: goal 50, town 30, castle 10, prisoners +-5 each, plus a capped battle bump ([[private-war-scoring-v2]]).
 - Sides come from the feudal title chain ([[private-war-sides-via-title-chain]]); one goal army per side ([[private-war-one-goal-army-per-side]]).
-- Same-kingdom sieges never run an assault MapEvent, so DADG completes them itself ([[private-war-synthetic-capture]]).
+- Same-kingdom sieges end in a real wall assault the player can join; a won fief goes to the war's interim owner ([[private-war-real-siege-assault]]). No kingdom vote follows a capture ([[king-keeps-open-fiefs]]).
 - Prisoners are held during the war, freed when it ends ([[private-war-prisoner-retention]]).
 - Outcome: attacker victory keeps only the goal; everything else reverts ([[private-war-revert-policy]]).
 - The player is excluded as claimant and as target.
 
-Main classes: `PrivateWarCampaignBehavior`, `PrivateWarHostilityRegistry`, `ClaimPressureCampaignBehavior` (daily claim evaluation), `DadgEncounterModel`, `DadgSettlementAccessModel`, `DadgPlayerCaptivityCampaignBehavior`, `DadgSallyOutCampaignBehavior`, `PrivateWarSiegeDefenderPolicy`, `PrivateWarPrisonerRetentionPatch`, `GoalArmyNoActiveWarDispersalPatch`, `PrivateWarScoreCalculator`, `WarSideResolver`, `PrivateWarSyntheticCapturePolicy`. The generic engine lives in `src/submodules/PrivateWars/Bannerlord.PrivateWars`.
+Main classes: `PrivateWarCampaignBehavior`, `PrivateWarHostilityRegistry`, `ClaimPressureCampaignBehavior` (daily claim evaluation), `DadgEncounterModel`, `DadgSettlementAccessModel`, `DadgPlayerCaptivityCampaignBehavior`, `DadgSallyOutCampaignBehavior`, `PrivateWarSiegeDefenderPolicy`, `PrivateWarPrisonerRetentionPatch`, `GoalArmyNoActiveWarDispersalPatch`, `PrivateWarScoreCalculator`, `WarSideResolver`, `PrivateWarCaptureOwnerPolicy`, `DadgSettlementClaimantCampaignBehavior`. The generic engine lives in `src/submodules/PrivateWars/Bannerlord.PrivateWars`.
 
 Status (2026-10-18): implemented and playtested in same-kingdom form. Cross-border wars and several quality improvements are open ([[cross-border-marches-decisions]], [[private-war-improvement-backlog]]).
 

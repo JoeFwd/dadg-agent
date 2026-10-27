@@ -62,6 +62,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 ## feature-private-wars
 
 - [[cross-border-marches-decisions]] (decision): Provisional decisions for cross-kingdom private wars: defender is the de jure holder, won claim takes title and de jure lands, titles migrate realms, never auto-escalate to a crown war.
+- [[dadg-private-war-capture-garrison-eviction]] (incident): Private-war capture evicted the capturer's new garrison (NRE in IsGarrisonStarving) because the MapEvent.Update war scope leaked into FinishBattle; closed at FinishBattle.
 - [[dadg-private-war-hostility-cpu-profile]] (incident): A PerfView capture showed private-war hostility / war-side / suzerainty / title-scan work using ~76% of main-thread CPU for the first ~50 s, collapsing to ~0.01% after a clan defection / kingdom-change event.
 - [[dadg-private-war-same-kingdom-battles]] (incident): Private-war battles between same-kingdom lords never resolved (verified 2026-10-11 at Donnington, Beauchamp army vs Neville besiegers); MapEvent.Update diplomatic finish needs a scoped patch
 - [[dadg-privatewars-gathering-army-fixes]] (incident): PrivateWars 2026-10-11 - three fixes for the AiBehaviorObject misread - _goalArmyLeaders recording, VetoSameKingdomSiegeRelief, and ReleaseBelligerentsFromForeignArmies

@@ -12,6 +12,4 @@ updated: 2026-10-18
 
 The user, 2026-10-11, saw runs stall with the game paused and the playtester idle. Put the rules from [[campaign-menu-without-wait-zeroes-ai-dt]] in every campaign-observation playtester prompt, next to the existing "resume GABP bridge exceptions immediately" rule. The 2026-10-13 discovery that a non-wait menu zeroes AI dt is the silent trap behind it.
 
-Related: [[playtester-agent-stall-self-repair-risk]]
-
 Generic rule: [[debugger-pause-kills-gabp-game]]

@@ -16,4 +16,4 @@ Stated by the user on 2026-09-05; applies to every written deliverable (design d
 
 **How to apply:** write `doc/<kebab-case-name>.md` in the worktree and report the path. Do not call the Artifact tool or offer to publish one. If a published artifact genuinely needs updating, ask first.
 
-Related: [[user-azerty-keyboard]], [[sendinput-foreground-guard]]
+Related: [[user-azerty-keyboard]]

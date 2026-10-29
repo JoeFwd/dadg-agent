@@ -16,6 +16,4 @@ Bannerlord's `InputKey` values are scan codes for physical key positions, so a h
 
 **How to apply:** when telling the user which key to press, give the AZERTY key (or say "the key Bannerlord shows in the hint"). Check the layout before debugging a "key does nothing" report.
 
-Related: [[sendinput-foreground-guard]]
-
 Generic rule: [[ws-naval-quirks]]

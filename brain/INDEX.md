@@ -55,7 +55,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 
 ## feature-other
 
-- [[character-creation-roster-requirements]] (reference): Character creation age-menu flow dereferences the selected roster's Horse and HorseHarness, so every active DADG role battle set needs both.
+- [[character-creation-roster-requirements]] (reference): All active DADG role battle sets carry a Horse and HorseHarness because the character-creation age menu dereferences both.
 - [[dadg-caravan-camel-alias]] (incident): FIXED 2026-10-11 - DADG reuses the aserai/khuzait culture ids for Anglo Irish and Lowland Scots; camel aliased to the mule in dadg_pre_native_items.xslt after Dumfries' rebel clan caravans crashed
 - [[dadg-lord-defection-sources]] (incident): Why DADG clans change realm - day-1 vanilla random lord relations plus Honor -1 leaders, not DADG code; see doc/lord-defection-analysis.md
 
@@ -139,7 +139,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 
 ## scotland
 
-- [[dadg-hebrides-island-float-terrain-fix]] (howto): Offshore Scottish settlements float because terrain sits below the 10.0 water plane; raise the heightmap, settlement Z comes from a physics raycast, not the navmesh.
+- [[dadg-hebrides-island-float-terrain-fix]] (howto): About 30 offshore Scottish settlements floated because their terrain sat at 7-9 m, below the 10.0 water plane; fix is raising the heightmap to ~13.5 m and repainting the BEACH weight to BASE.
 - [[dadg-scotland-gate-av]] (incident): FIXED 2026-10-11 (uncommitted Map settlements.xml) - Kilchurn castle and Auchterarder village gates were on non-land faces and crashed every campaign playtest
 - [[dadg-scotland-settlement-budget]] (decision): Consolidated Scotland plan: 160 settlements (Crown 100, Lordship of the Isles 60), ratios and kingdom boundary decisions.
 - [[dadg-scottish-1471-banner-corrections]] (reference): The 2026-09-19 pass that rewrote Scottish kingdom/clan banner keys in poc.config.json for 1471 accuracy, including a CC BY flame icon for MacLeod of Lewis, and the checks used.
@@ -161,10 +161,8 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[apm-hooks-shell-mismatch]] (howto): apm emits $env:CLAUDE_PROJECT_DIR in Claude Code hooks but hooks run under bash on Windows - fix the .apm/hooks templates, not the generated settings.json
 - [[deliver-docs-as-md-not-artifacts]] (decision): Agent-workflow preference - design docs, plans and reports go to doc/<kebab-name>.md in the repo; never publish artifacts
 - [[dependency-submodules-workflow]] (howto): Controlled dependencies live under src/submodules and are edited in place; rebuild DADG to deploy their DLLs.
-- [[playtester-agent-stall-self-repair-risk]] (lesson): The bannerlord-debug-playtester subagent can spiral into deleting ~/.gabs/bannerlord/*.json when its own MCP tools look unreachable; this breaks the GABS MCP bridge for the whole session - forbid it explicitly and do not re-resume repeat offenders
 - [[playtester-campaign-idle-rules]] (decision): Briefing rule - every unattended campaign observation prompt (e.g. private-war runs) must require parking the player in a friendly town's wait menu and re-checking speed 4 each poll
 - [[safe-evaluation-breakpoint-anchor]] (howto): In DADG use DellarteDellaGuerra.Domain/DisplayCompilingShaders/DisplayShaderNumber.cs:25 as the evaluation breakpoint anchor for any campaign or mission code
-- [[sendinput-foreground-guard]] (lesson): Agent-workflow rule - never SendInput to Bannerlord without a foreground-PID abort guard; Windows blocks focus stealing and keys land in the user's own app
 - [[subagent-session-limit-resume]] (lesson): Background subagents that die on "session limit" can auto-resume after the reset and still complete; do not relaunch duplicates, and do not trust a 0-byte transcript or unchanged worktree as proof of death
 - [[user-azerty-keyboard]] (lesson): The user plays on an AZERTY keyboard; Bannerlord binds by physical key position, so QWERTY-named hotkeys land elsewhere (War Sails "Z" ToggleSail = the W key)
 - [[worktree-build-quirks]] (howto): DADG worktree builds fail on MAX_PATH and uninitialized submodules; verified subst + -m:1 + DADG_MODULES_ROOT recipe, plus the GameFolder deployment trap

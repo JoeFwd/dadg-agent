@@ -16,4 +16,4 @@ Observed 2026-07-18: a background implementer returned a completion notification
 
 **How to apply:** wait for the reset rather than relaunching. If a duplicate was launched, TaskStop it as soon as the original shows life.
 
-Related: [[worktree-build-quirks]], [[playtester-agent-stall-self-repair-risk]]
+Related: [[worktree-build-quirks]]

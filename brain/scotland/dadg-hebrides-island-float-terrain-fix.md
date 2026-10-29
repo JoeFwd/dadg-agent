@@ -1,15 +1,15 @@
 ---
 name: dadg-hebrides-island-float-terrain-fix
-description: Offshore Scottish settlements float because terrain sits below the 10.0 water plane; raise the heightmap, settlement Z comes from a physics raycast, not the navmesh.
+description: About 30 offshore Scottish settlements floated because their terrain sat at 7-9 m, below the 10.0 water plane; fix is raising the heightmap to ~13.5 m and repainting the BEACH weight to BASE.
 type: howto
 topic: scotland
 tags: [scotland, terrain, water]
 sources: [scotland/terrain_island_plan.md]
-updated: 2026-10-18
+updated: 2026-10-29
 ---
 
 # Floating island settlements
 
-Cause: terrain under ~30 offshore settlements sits at ~7-9 m, below the water plane (water_level 10.0). Settlement entities take Z from `Scene.GetHeightAtPoint` (physics raycast on terrain), not the navmesh, so raising the heightmap (target ~13.5 m) lifts them; shorelines form where terrain crosses 10. No water-mask edit needed. Navmesh Z re-lift is cosmetic. Sea-floor texels carry the BEACH layer at weight 255, so raised islands render sandy unless WGHT is repainted to BASE. Editable offline with the ZGR6 writer ([[zgr6-terrain-bin-format]]).
+The terrain under about 30 offshore Scottish settlements sits at 7-9 m, below the DADG map's water plane (`water_level` 10.0), so they float. Fix: raise the heightmap under them to about 13.5 m. DADG sea-floor texels carry the BEACH layer at weight 255, so repaint WGHT to BASE or the raised islands render sandy.
 
-Related: [[scotland-population-project]]
+Generic rule: [[campaign-settlement-height-from-terrain-raycast]]. Related: [[scotland-population-project]]

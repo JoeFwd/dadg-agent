@@ -92,7 +92,8 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[dadg-missing-commonareamarker-scenes]] (incident): UNFIXED as of 2026-08-01 - DADG scenes missing CommonAreaMarker scripts - York, Lincoln, London, Newcastle, dadg_village_d/e, two hideouts, plus partial others
 - [[dadg-warsails-campaign-perf-2026-10-04]] (incident): Findings of the 2026-10-04 War Sails campaign performance probe - fast-forward cost reproduced, no War Sails-specific cause proven; sea navmesh numbers and a material discrepancy.
 - [[disguise-naked-empty-defaultequipment]] (incident): The disguised-hero equipment roster resolves with one set but DefaultEquipment is empty, so the player spawns naked; cause unknown.
-- [[warsails-ship-crash-chain-2026-09-30]] (incident): Sequence of War Sails crashes 2026-09-30 to 2026-10-03 and what fixed each, with the FMOD hang left open.
+- [[dadg-ws-hook-item-stripped]] (incident): FIXED 2026-10-25 - DADG's dadg_pre_native_items.xslt stripped NavalDLC's "hook" item, causing the War Sails sea-battle FMOD hang; hook (plus burning_arrows/bolts and ship grapeshot) whitelisted
+- [[warsails-ship-crash-chain-2026-09-30]] (incident): Sequence of War Sails crashes 2026-09-30 to 2026-10-25 and what fixed each.
 
 ## items-crafting
 
@@ -126,6 +127,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[dadg-rochester-castle-scene-spec]] (decision): Design spec for dadg_Rochester_castle: real dimensions, scale, asset mapping, and the worldmap-icon trap.
 - [[dadg-roman-bridge-terrain14-banks]] (incident): UNFIXED - five Roman town bridge decks (Great Ouse, London, Severn, Wye, Oxford) sit between terrain-14 RuralArea banks that land parties cannot use; plus one London Gothic pier with no confirmed span.
 - [[dadg-siege-scene-reference-castles]] (reference): Reference siege scenes and navmesh scale in DADG: Clun and Dartmouth as oracles, native scenes are 5-30x larger.
+- [[dadg-ws-kogge-carrack-deck-navigability]] (incident): 2026-10-23 - kogge and carrack upper decks made AI-walkable (stair collision + conforming navmeshes, carrack 353 / kogge 228 faces); not live-tested; steep kogge stairs, carrack rail clip, 2 boarding ids; swivel gun in progress
 - [[dadg-ws-ship-navmesh-and-climber-fixes]] (incident): FIXED 2026-10-01 - DADG ship climbers re-yawed to the vanilla frame and ship navmeshes rebuilt coarse (kogge 94 / carrack 24 / boat 13 faces); carrack has no stairs to its upper decks so they are excluded; open-sea campaign navmesh stripped on purpose
 - [[dadg-ws-ship-reimport-state]] (reference): 2026-10-02 state of DADG War Sails ship mesh reimports - slot 1 now Map dadg_ws_* aliases, slot 2 stale; English boat prefab still on v1 sail and old body
 - [[dadg-york-navmesh-fragmentation]] (incident): York's navmesh.bin is valid but fragmented (74 components, 31 tiny islands vs Lancaster 37/7); ruled out as the civilian-mission crash cause on 2026-07-31, kept as a cleanup item

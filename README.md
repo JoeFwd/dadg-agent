@@ -20,6 +20,7 @@ packages deep. Copy the `mcp:` block again whenever a bannerlord-agent bump chan
 | `.apm/skills/bannerlord-agent-settings/` | The DADG values the generic skills load by name: debug config, logs, anchors, cheats, installs |
 | `.apm/skills/dadg-project-context/` | Architecture, modules, feature domains, plus DADG case studies and workflows |
 | `.apm/skills/bannerlord-scotland-settlement-placement/` | Placing Scottish settlements on the DADG map from KMZ calibration |
+| `.apm/skills/dadg-combat-data/` | Regenerating the weapon ladder, damage factors and the per-body-part armour material table |
 | `brain/` | The DADG knowledge brain (Obsidian wikilinks). Start at `brain/INDEX.md` |
 
 ## Use

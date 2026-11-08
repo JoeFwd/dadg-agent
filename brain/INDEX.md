@@ -28,6 +28,19 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[dadg-abbey-church-system]] (reference): DADG abbeys are Villages tagged in Core config/dadg.church_settlements.xml; each diocese needs exactly one Cathedral or the church feature silently deactivates; the system lives on UNMERGED feature/add-church
 - [[dadg-sanctuary-save-softlock-not-a-container-bug]] (incident): 2026-08-12 sanctuary save/load soft-lock looked like a missing Dictionary<Hero,CampaignTime> definition, but vanilla already registers it; adding it would have been a duplicate
 
+## feature-combat
+
+- [[dadg-combat-cut-trial-siege-2026-11-08]] (reference): Siege ending 12:53 verifies all 0/5/15/25/40% cut trial rates; plate cuts nearly triple and mean damage taken now falls consistently from Cloth to Plate; comparison with the frozen 11:44 baseline
+- [[dadg-combat-cut-progression-trial]] (decision): 0/5/15/25/40% cut-absorption trial; unchanged pierce/blunt/firearms, saved pre-trial siege comparison table, estimates and link to the completed trial siege
+- [[dadg-combat-latest-siege-2026-11-08]] (reference): Siege ending 11:44 ran the current absorption-only rules; 8,696 hits with exact summary reconciliation, sword protection retained and axe/polearm cuts much weaker; observed damage and logger limits
+- [[dadg-combat-absorption-refit]] (decision): 2026-11-08 fit of 31,563 battlefield/siege hits to absorption-only rules; 80% plate cut preserves swords but reduces axe/polearm cuts; method, samples and remaining drift
+- [[dadg-armour-values]] (reference): DADG armour classes, value bands, helmet coverage formula, weights and tier_override per class, set from a Blender ray-cast of each FBX; and why mesh material names mislead sleeve detection
+- [[dadg-combat-native-layer-over-rcm]] (decision): Decision 2026-11-06 - DADG built its own combat layer instead of depending on Realistic Combat Mod (Nexus 11507) or RBM; RCM's keyword classifier, firearm blind spot and XSLT side effects, RBM's 1.4.8 drop
+- [[dadg-combat-open-work]] (reference): What the DADG combat overhaul has and has not proven live (8 sieges, absorption in siege 8), what remains unmeasured, troop re-equip and stripped-vanilla-weapon gaps, and the design calls still open for the user
+- [[dadg-combat-overhaul]] (reference): Hub - DADG's native combat layer: per-location armour materials, absorption, half-sword/non-tip tweaks and a T1-T6 weapon tier table, all through model decorators with no Harmony patch
+- [[dadg-combat-rules-tuning]] (howto): How to retune DADG combat - rule rows in dadg_combat_items.xml need no rebuild; the two untracked generators own weapon and armour rows and overwrite hand edits; edit the live content module; read [combat-balance] logs
+- [[dadg-weapon-ladder]] (reference): DADG weapons follow a vanilla-anchored T1-T6 ladder (troop level 6/11/16/21/26/31), ~10% per tier, role over tier; target stats, shared blades, gaps and the polearm weight compromise
+
 ## feature-coop
 
 - [[coop-compat-project]] (decision): DADG <-> BannerlordCoop compatibility effort (started 2026-10-11) - solo-first with a coop adapter submodule; reading Coop source for interop is authorised, copying is not

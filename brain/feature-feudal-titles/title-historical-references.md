@@ -1,0 +1,224 @@
+---
+name: title-historical-references
+description: The historical references behind each 1471 territorial title, moved off the encyclopedia pages on 2026-11-08; the plan JSON stays the source of truth
+type: reference
+topic: feature-feudal-titles
+tags: [feudal, titles, encyclopedia, sources, 1471]
+sources: [doc/title-encyclopedia/secular-title-plan.json]
+updated: 2026-11-08
+---
+
+# Title historical references
+
+Title encyclopedia pages no longer show a "Historical references" list, and the "Succession and transfers"
+section is folded into the description. The URLs behind each title stay in
+`src/doc/title-encyclopedia/secular-title-plan.json` (`titles[].sources`). Edit them there: the generator
+`src/tools/build_title_encyclopedia_runtime.py` no longer copies them into `TitleArticles.xml`. The list below
+is a snapshot of that file: 207 titles, 321 references.
+
+- **County Palatine of Durham** (`region_durham`): <https://en.wikipedia.org/wiki/County_Palatine_of_Durham>
+- **East March** (`region_east_march`): <https://en.wikipedia.org/wiki/Warden_of_the_Marches>, <https://en.wikipedia.org/wiki/Henry_Percy,_4th_Earl_of_Northumberland>
+- **Northumberland** (`shire_northumberland`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **West March** (`region_west_march`): <https://en.wikipedia.org/wiki/Warden_of_the_Marches>
+- **Cumberland** (`shire_cumberland`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **County of York** (`region_york`): <https://en.wikipedia.org/wiki/Richmondshire>, <https://en.wikipedia.org/wiki/Assizes>
+- **York and the East Riding** (`shire_east_riding`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Richmondshire** (`shire_richmondshire`): <https://en.wikipedia.org/wiki/Richmondshire>
+- **North Riding** (`shire_north_riding`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **West Riding** (`shire_west_riding`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **County Palatine of Lancaster** (`region_lancaster`): <https://en.wikipedia.org/wiki/County_Palatine_of_Lancaster>
+- **County Palatine of Chester** (`region_chester`): <https://en.wikipedia.org/wiki/County_Palatine_of_Chester>, <https://en.wikipedia.org/wiki/Edward_of_Westminster>
+- **Midland Circuit** (`region_midland_circuit`): <https://en.wikipedia.org/wiki/Assizes>, <https://discovery.nationalarchives.gov.uk/details/r/C9979>
+- **Warwick and Leicester** (`shire_warwick_leicester`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Northamptonshire** (`shire_northamptonshire`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Nottingham and Derby** (`shire_nottingham_derby`): <https://en.wikipedia.org/wiki/Sheriff_of_Nottinghamshire,_Derbyshire_and_the_Royal_Forests>
+- **Lincolnshire** (`shire_lincolnshire`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Norfolk Circuit** (`region_norfolk_circuit`): <https://en.wikipedia.org/wiki/Assizes>, <https://discovery.nationalarchives.gov.uk/details/r/C9979>
+- **Norfolk** (`shire_norfolk`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Suffolk** (`shire_suffolk`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Home Circuit** (`region_home_circuit`): <https://en.wikipedia.org/wiki/Assizes>, <https://discovery.nationalarchives.gov.uk/details/r/C9979>, <https://en.wikipedia.org/wiki/Cinque_Ports>
+- **Kent** (`shire_kent`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Cinque Ports** (`shire_cinque_ports`): <https://en.wikipedia.org/wiki/Cinque_Ports>
+- **Surrey and Sussex** (`shire_surrey_sussex`): <https://en.wikipedia.org/wiki/Sheriff_of_Sussex>
+- **Essex and Hertford** (`shire_essex_hertford`): <https://en.wikipedia.org/wiki/High_Sheriff_of_Hertfordshire>
+- **Oxford Circuit** (`region_oxford_circuit`): <https://en.wikipedia.org/wiki/Assizes>, <https://discovery.nationalarchives.gov.uk/details/r/C9979>
+- **Oxford and Berks** (`shire_oxford_berks`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Gloucestershire and Bristol** (`shire_gloucester`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Shropshire** (`shire_shropshire`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Western Circuit** (`region_western_circuit`): <https://en.wikipedia.org/wiki/Assizes>, <https://discovery.nationalarchives.gov.uk/details/r/C9979>
+- **Hampshire** (`shire_hampshire`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Somerset and Dorset** (`shire_somerset_dorset`): <https://en.wikipedia.org/wiki/High_Sheriff_of_Somerset>, <https://en.wikipedia.org/wiki/High_Sheriff_of_Dorset>
+- **Devon** (`shire_devon`): <https://en.wikipedia.org/wiki/List_of_shrievalties>
+- **Duchy of Cornwall** (`region_cornwall`): <https://en.wikipedia.org/wiki/Duchy_of_Cornwall>, <https://en.wikipedia.org/wiki/Edward_of_Westminster>
+- **Principality of Wales** (`region_wales`): <https://en.wikipedia.org/wiki/Principality_of_Wales>, <https://en.wikipedia.org/wiki/Statute_of_Rhuddlan>
+- **North Wales** (`shire_north_wales`): <https://en.wikipedia.org/wiki/Statute_of_Rhuddlan>
+- **South Wales** (`shire_south_wales`): <https://en.wikipedia.org/wiki/Statute_of_Rhuddlan>
+- **March of Wales** (`region_march_of_wales`): <https://en.wikipedia.org/wiki/Welsh_Marches>, <https://en.wikipedia.org/wiki/Marcher_lord>
+- **Lordship of Glamorgan** (`shire_glamorgan`): <https://en.wikipedia.org/wiki/Welsh_Marches>
+- **Lordship of Gower** (`shire_gower`): <https://en.wikipedia.org/wiki/Welsh_Marches>
+- **Lothian** (`region_lothian`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>, <https://en.wikipedia.org/wiki/Justiciar_of_Lothian>
+- **Sheriffdom of Edinburgh** (`shire_edinburgh`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Scottish Marches** (`region_scottish_marches`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>, <https://en.wikipedia.org/wiki/Warden_of_the_Marches>, <https://en.wikipedia.org/wiki/Berwick-upon-Tweed>, <https://en.wikipedia.org/wiki/Stewartry_of_Kirkcudbright>
+- **Lordship of Liddesdale** (`shire_liddesdale`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Sheriffdom of Dumfries** (`shire_dumfries`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Lordship of Galloway** (`shire_galloway`): <https://en.wikipedia.org/wiki/Stewartry_of_Kirkcudbright>
+- **Clydesdale and the Principality** (`region_clydesdale`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>, <https://en.wikipedia.org/wiki/Prince_of_Scotland>
+- **Argyll** (`shire_argyll`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Fife, Gowrie and Angus** (`region_fife_gowrie_angus`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Sheriffdom of Fife** (`shire_fife`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Mar and the Mearns** (`region_mar_mearns`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Sheriffdom of Aberdeen** (`shire_aberdeen`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Moray** (`region_moray`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>, <https://en.wikipedia.org/wiki/Earl_of_Moray>
+- **Sheriffdom of Inverness** (`shire_inverness`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Caithness, Sutherland and Orkney** (`region_far_north`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>, <https://en.wikipedia.org/wiki/Earl_of_Orkney>, <https://en.wikipedia.org/wiki/Annexation_of_Orkney_and_Shetland>
+- **Earldom of Caithness** (`shire_caithness`): <https://en.wikipedia.org/wiki/Shires_of_Scotland>
+- **Islay and Kintyre** (`region_islay_kintyre`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **Islay** (`shire_islay`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **Earldom of Ross** (`region_ross`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **Easter Ross** (`shire_easter_ross`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **Skye and the Outer Isles** (`region_skye_outer_isles`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **The Long Island** (`shire_long_island`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **Skye** (`shire_skye`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **Lochaber and Garmoran** (`region_lochaber`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **Garmoran and Ardnamurchan** (`shire_garmoran`): <https://en.wikipedia.org/wiki/Lord_of_the_Isles>, <https://en.wikipedia.org/wiki/John_of_Islay,_Earl_of_Ross>
+- **Honour of Pontefract** (`duchy_lancaster`): <https://www.wyjs.org.uk/media/1354/pontefract-castle.pdf>, <https://www.cambridge.org/core/books/abs/kingship-lordship-and-sanctity-in-medieval-britain/richard-iii-and-the-honour-of-pontefract-147185/07227D45A9F73B8B011F0F7FC06F5387>
+- **Honour of Lancaster** (`county_lancashire`): <https://www.lancaster.ac.uk/global-affairs/history/medieval-duchy-of-lancaster/>, <https://www.duchyoflancaster.co.uk/about-the-duchy-of-lancaster/our-history-and-timeline/>
+- **Piel estate** (`barony_piel`): <https://www.english-heritage.org.uk/visit/places/piel-castle/history/>
+- **Liverpool castle estate** (`barony_liverpool`): <https://www.hslc.org.uk/wp-content/uploads/2017/07/42-11-Cox.pdf>, <https://richardiii.net/wp-content/uploads/2022/09/26-Richard-of-Gloucester-1461-70-Income-Lands-and-Associates-His-Whereabouts-and-Responsibilities.pdf>
+- **Barony of Kendal** (`barony_kendal`): <https://www.lancaster.ac.uk/fass/projects/manorialrecords/cumbria/westmorlandlist.htm>, <https://www.cumbriacountyhistory.org.uk/township/kendal-formerly-kirkby-kendal>
+- **City of Chester** (`county_rivers`): <https://www.cambridge.org/core/books/abs/cheshire-and-the-tudor-state-14801560/chester-council-and-exchequer-powerful-local-institutions/3AB603AE0A876F54D2BD3044B3C9DADA>, <https://www.english-heritage.org.uk/visit/places/beeston-castle-and-woodland-park/history>
+- **Beeston castle estate** (`barony_beeston`): <https://www.english-heritage.org.uk/visit/places/beeston-castle-and-woodland-park/history>
+- **Lordship of Chirk** (`barony_chirk`): <https://www.nationaltrust.org.uk/visit/wales/chirk-castle/history-of-chirk-castle>, <https://heritagerecords.nationaltrust.org.uk/HBSMR/MonRecord.aspx?skin=printerfriendly&uid=MNA132553>
+- **Lordship of the High Peak** (`barony_peveril`): <https://www.english-heritage.org.uk/visit/places/peveril-castle/history/>
+- **Earldom of Warwick** (`duchy_warwick`): <https://historicengland.org.uk/listing/the-list/list-entry/1000386>
+- **City of Coventry** (`county_warwick`): <https://www.coventry.ac.uk/the-university/city-of-culture/significant-events-in-coventry/history-of-coventry-timelne/>, <https://wrap.warwick.ac.uk/id/eprint/106670/1/WRAP_Theses_Knight_1986.pdf>
+- **Kenilworth castle estate** (`barony_kenilworth`): <https://www.english-heritage.org.uk/visit/places/kenilworth-castle/history-and-stories/history/>, <https://www.nationalarchives.gov.uk/education/resources/kenilworth-castle-part-one/>
+- **Northampton castle estate** (`barony_northampton`): <https://her.northamptonshire.gov.uk/Monument/MNN16430>, <https://www.westnorthants.gov.uk/castle-park-heritage-timeline/castle-park-heritage-part-5-castle>
+- **Worcester castle estate** (`barony_worcester`): <https://eprints.oxfordarchaeology.com/661/4/WCM_101341_WODIBOT2.FinalpdfA.pdf>, <https://www.explorethepast.co.uk/2021/11/our-archaeological-archivist/>
+- **Borough of Newcastle upon Tyne** (`county_westmorland`): <https://calmview.twmuseums.org.uk/calmview/Record.aspx?id=MD.NC&src=CalmView.Catalog>
+- **Durham episcopal castle estate** (`barony_durham`): <https://dur.ac.uk/things-to-do/venues/durham-castle/history-and-architecture/>, <https://historicengland.org.uk/listing/the-list/list-entry/1000089>
+- **Lordship of Barnard Castle** (`barony_barnard`): <https://www.english-heritage.org.uk/visit/places/barnard-castle/history/>
+- **Lordship of Skelton** (`barony_skelton`): <https://teesarchaeology.com/wp-content/uploads/2023/06/MedievalSkelton.pdf>, <https://yorkshiregardenstrust.org.uk/research/sites/skelton-castle>
+- **City of Carlisle** (`county_clifford`): <https://www.english-heritage.org.uk/visit/places/carlisle-castle/history/>
+- **Lordship of Penrith** (`barony_penrith`): <https://www.english-heritage.org.uk/visit/places/penrith-castle/history/>
+- **Lordship of Fotheringhay** (`duchy_york`): <https://her.northamptonshire.gov.uk/Monument/MNN14895>, <https://peterborougharchaeology.org/fotheringhay-castle/>
+- **City of York** (`county_york`): <https://www.arlima.net/the-orb/encyclop/culture/towns/florilegium/government/gvcons08.html>
+- **Honour of Skipton** (`barony_skipton`): <https://www.skiptoncastle.co.uk/hist.asp>, <https://skiptoncravenhistorysociety.com/skipton-history/>
+- **Lordship of Middleham** (`barony_middleham`): <https://www.english-heritage.org.uk/visit/places/middleham-castle/history/>
+- **Honour of Richmond** (`barony_richmond`): <https://www.english-heritage.org.uk/visit/places/richmond-castle/history-and-stories/history/>
+- **Lordship of Helmsley** (`barony_helmsley`): <https://production.english-heritage.org.uk/siteassets/home/visit/places-to-visit/helmsley-castle/schools/accordion/ocr-gcse_study-of-the-historic-environment_helmsley-castle.pdf>
+- **Borough of Kingston upon Hull** (`county_hull`): <https://www.hullhistorycentre.org.uk/research/research-guides/1299-charter.aspx>, <https://hullhistorycentre.blogspot.com/2017/01/the-making-of-hull.html>
+- **Scarborough castle estate** (`barony_scarborough`): <https://www.english-heritage.org.uk/visit/places/scarborough-castle/history/>
+- **Lordship of Hallamshire** (`county_hallamshire`): <https://www.sheffield.gov.uk/sites/default/files/docs/libraries-and-archives/archives-and-local-studies/research/Castle%20study%20guide%20v1-1.pdf>, <https://universitypress.whiterose.ac.uk/chapters/9/files/f86cb66d-b25e-4526-aa95-2cca9308f4c9.pdf>
+- **Honour of Conisbrough** (`barony_conisbrough`): <https://www.english-heritage.org.uk/visit/places/conisbrough-castle/history/>
+- **Nottingham castle estate** (`barony_nottingham`): <https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-1123-1/dissemination/pdf/trentpea1-349686_1.pdf>, <https://committee.nottinghamcity.gov.uk/documents/s43493/Appendix%201%20-%20Nottingham%20Castle%20Conservation%20Management%20Plan.pdf>
+- **City of Lincoln** (`county_lincoln`): <https://www.cambridge.org/core/books/abs/royal-charters-of-the-city-of-lincoln/index/3804F57F4863D9D41FAB9616D4374E29>, <https://democratic.lincoln.gov.uk/documents/s74929/Appendix%2B1%2B-%2BLocal%2BGovernment%2BReorganisation%2B-%2BCity%2Bof%2BLincoln%2BProposal%2BMarch%2B2025.pdf>
+- **Lordship of Tattershall** (`barony_tattershall`): <https://www.nationaltrust.org.uk/visit/nottinghamshire-lincolnshire/tattershall-castle/the-history-of-tattershall-castle>
+- **Stafford castle estate** (`duchy_buckingham`): <https://www.staffordbc.gov.uk/stafford-castle-and-visitor-centre>, <https://www.staffordbc.gov.uk/history-of-stafford-and-the-council>
+- **City of Hereford** (`county_bergavenny`): <https://herefordcitycouncil.gov.uk/city-history/>, <https://htt.herefordshire.gov.uk/herefordshires-past/the-medieval-period/towns/>
+- **Lordship of Brecknock** (`barony_brecon`): <https://coflein.gov.uk/en/sites/92021>, <https://storipowys.org.uk/wp-content/uploads/2024/12/public-records-held-by-powys-archives-blog_quarter-sessions-records_Breconshire_B_QS_bi.pdf>
+- **Lordship of Painscastle** (`barony_painscastle`): <https://coflein.gov.uk/en/sites/402326>
+- **Borough of Shrewsbury** (`county_shrewsbury`): <https://www.shrewsburytowncouncil.gov.uk/wp-content/uploads/Mayors-Handbook-2023-24.pdf>
+- **Lordship of Ludlow** (`barony_ludlow`): <https://historicengland.org.uk/listing/the-list/list-entry/1004778>, <https://www.crsbi.ac.uk/view-item?i=13935>
+- **Lordship of Montgomery** (`barony_montgomery`): <https://cadw.gov.wales/visit/places-to-visit/montgomery-castle>, <https://mortimerhistorysociety.org.uk/the-mortimers/mortimer-castles/montgomery-castle/>
+- **Lordship of Framlingham** (`duchy_norfolk`): <https://historicengland.org.uk/listing/the-list/list-entry/1002965>
+- **City and County of Norwich** (`county_howard`): <https://researchbriefings.files.parliament.uk/documents/CBP-10233/CBP-10233.pdf>
+- **Manor of Baconsthorpe** (`barony_baconsthorpe`): <https://www.english-heritage.org.uk/visit/places/baconsthorpe-castle/history/>
+- **Borough of Lynn Episcopi** (`county_lynn`): <https://www.west-norfolk.gov.uk/download/downloads/id/7178/kings_lynn_urban_archaeological_database_project_report_-_march_2022.pdf>, <https://the-orb.arlima.net/encyclop/culture/towns/lynn5.html>
+- **Liberty of St Edmund** (`county_suffolk`): <https://www.english-heritage.org.uk/visit/places/bury-st-edmunds-abbey/history/>
+- **Honour of Clare** (`barony_clare`): <https://www.landmarktrust.org.uk/globalassets/3.-images-and-documents-to-keep/history-albums/the-ancient-house-history-album.pdf>
+- **Borough of Colchester** (`county_essex`): <https://colchesterheritage.co.uk/medieval-colchester>, <https://historicengland.org.uk/listing/the-list/list-entry/1002217>
+- **Lordship of Castle Hedingham** (`barony_hedingham`): <https://historicengland.org.uk/listing/the-list/list-entry/1122959?section=official-list-entry>
+- **Royal castle and manor of Corfe** (`duchy_somerset`): <https://www.nationaltrust.org.uk/visit/dorset/corfe-castle/the-history-of-corfe-castle>
+- **Town and County of Bristol** (`county_bristol`): <https://museums.bristol.gov.uk/narratives.php?irn=2794>, <https://www.bristol.gov.uk/council/councillors-and-the-lord-mayor/lord-mayor-of-bristol/role-and-duties-of-the-lord-mayor/the-history-of-the-lord-mayor>
+- **Lordship of Chepstow (Striguil)** (`barony_chepstow`): <https://cadw.gov.wales/visit/places-to-visit/chepstow-castle>, <https://archives.library.wales/index.php/composite-18-cent-vol-mainly-relating-to-lordship-of-chepstow-containing-transcripts-records-and-notes>
+- **Royal castle of Gloucester** (`barony_gloucester`): <https://www.gloucestershire.gov.uk/media/elkbj3eg/toc_gazeteer_of_gloucestershire_castles-53144.pdf>, <https://citeseerx.ist.psu.edu/document?doi=3f03f053065d005c3f9028cdd2c86e1689a0ad20&repid=rep1&type=pdf>
+- **Manor of Farleigh Hungerford** (`barony_farleigh`): <https://www.english-heritage.org.uk/visit/places/farleigh-hungerford-castle/history/>
+- **Episcopal estate of Sherborne** (`barony_exeter`): <https://historicengland.org.uk/listing/the-list/list-entry/1015328>
+- **Manor of Wardour** (`barony_wardour`): <https://www.english-heritage.org.uk/visit/places/old-wardour-castle/history/>
+- **City of Exeter** (`county_devon`): <https://azure.exeter.gov.uk/leisure-and-culture/exeter-historic-guildhall/guildhall-overview/>, <https://gatehouse-gazetteer.info/murage/mux/243.html>
+- **Honour of Dunster** (`barony_dunster`): <https://historicengland.org.uk/listing/the-list/list-entry/1000467>, <https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-1132-1/dissemination/pdf/037/037_057-093_155-179_271-293_395-405.pdf>
+- **Borough of Plymouth** (`barony_plymouth`): <https://www.plymouth.gov.uk/manor-parish-and-town-boundary-stones>, <https://www.gatehouse-gazetteer.info/LOC/14391112.html>
+- **Barony of Totnes** (`barony_totnes`): <https://www.english-heritage.org.uk/visit/places/totnes-castle/history/>
+- **Manor of Taunton Deane** (`barony_taunton`): <https://swheritage.org.uk/wp-content/uploads/2023/04/TAUNTON-LANDOWNERSHIP-0022023.pdf>, <https://historicengland.org.uk/listing/the-list/list-entry/1013541>
+- **Honour of Launceston** (`county_cornwall`): <https://www.english-heritage.org.uk/visit/places/launceston-castle/history/>, <https://en.wikisource.org/wiki/Charter_11_Edward_III%2C_1337%2C_relating_to_the_Duchy_of_Cornwall>
+- **Barony of Okehampton** (`barony_okehampton`): <https://www.english-heritage.org.uk/visit/places/okehampton-castle/history/>
+- **Priory estate of St Michael's Mount** (`barony_saint_michaels_mount`): <https://heritagerecords.nationaltrust.org.uk/HBSMR/MonRecord.aspx?uid=MNA105289>
+- **Royal castle and borough of Harlech** (`duchy_wales`): <https://www.wales.com/about/history-and-heritage/how-cadw-safeguards-historic-places-wales>, <https://whc.unesco.org/archive/2008/whc08-32com-inf8B1ADDe.pdf>
+- **Castle and borough of Cardiff** (`county_glamorgan`): <https://www.cardiffcastle.com/explore/history/timeline/>
+- **Castle and borough of Swansea** (`barony_swansea`): <https://coflein.gov.uk/media/7/611/321/awp_585_001.pdf>, <https://www.walesher1974.org/her/groups/GGAT/media/ReportPDF/345_A241_WindStreetDBA.pdf>
+- **Castle estate of Caerphilly** (`barony_caerphilly`): <https://cadw.gov.wales/visit/places-to-visit/caerphilly-castle>, <https://www.cardiffcastle.com/explore/history/timeline/>
+- **Earldom of Pembroke** (`county_pembroke`): <https://pembrokecastle.co.uk/history/castle-timeline/>, <https://pembrokecastle.co.uk/blocks/download/20190213035045Pembroke%20Castle%20Information%20pack.pdf>
+- **Royal castle of Carmarthen** (`barony_carmarthen`): <https://cadwpublic-api.azurewebsites.net/reports/sam/FullReport?id=331>
+- **Royal castle and borough of Aberystwyth** (`county_ceredigion`): <https://coflein.gov.uk/en/sites/86>, <https://www.ceredigion.gov.uk/media/yibooizm/arfarniad_ardal_gadwraeth_aberystwyth.pdf>
+- **Castle estate of Cardigan** (`barony_cardigan`): <https://senedd.wales/media/5yvkqbel/bus-guide-n0000000000000000000000000004371-english.pdf>
+- **Royal castle and borough of Caernarfon** (`county_ferrers`): <https://www.wales.com/about/history-and-heritage/how-cadw-safeguards-historic-places-wales>, <https://whc.unesco.org/archive/2008/whc08-32com-inf8B1ADDe.pdf>
+- **Royal castle and borough of Conwy** (`barony_conwy`): <https://www.wales.com/about/history-and-heritage/how-cadw-safeguards-historic-places-wales>, <https://whc.unesco.org/archive/2008/whc08-32com-inf8B1ADDe.pdf>
+- **Royal castle and borough of Beaumaris** (`barony_beaumaris`): <https://cadw.gov.wales/visit/places-to-visit/beaumaris-castle?lang=en>, <https://whc.unesco.org/archive/2008/whc08-32com-inf8B1ADDe.pdf>
+- **Lordship of Denbigh** (`barony_denbigh`): <https://cadw.gov.wales/visit/places-to-visit/denbigh-castle>, <https://cadw.gov.wales/visit/places-to-visit/castles-wales>
+- **City of London** (`county_london`): <https://www.cityoflondon.gov.uk/about-us/law-historic-governance/the-citys-government>, <https://www.thelondonarchives.org/your-research/william-1-charter-to-the-city-of-london>
+- **Royal castle estate of Windsor** (`barony_windsor`): <https://www.rct.uk/visit/windsor-castle/who-built-windsor-castle>, <https://historicengland.org.uk/listing/the-list/list-entry/1006996?section=official-list-entry>
+- **Honour of Berkhamsted** (`barony_berkhamsted`): <https://www.english-heritage.org.uk/visit/places/berkhamsted-castle/history/>, <https://en.wikisource.org/wiki/Charter_11_Edward_III%2C_1337%2C_relating_to_the_Duchy_of_Cornwall>
+- **Castle estate of Hertford** (`barony_hertford`): <https://www.hertfordcastle.co.uk/castle-history/>, <https://historicengland.org.uk/listing/the-list/list-entry/1009827>
+- **City and County of Canterbury** (`county_kent`): <https://news.canterbury.gov.uk/news/protecting-canterburys-city-status-is-top-priority-say-councillors/>, <https://kar.kent.ac.uk/60522/1/92FinalCorrectedMaster.pdf>
+- **Royal castle of Dover** (`barony_dover`): <https://www.english-heritage.org.uk/visit/places/dover-castle/history-and-stories/history-dover/>
+- **Castle estate of Rochester** (`barony_rochester`): <https://heritage.kent.gov.uk/Monument/MKE30342/>, <https://www.english-heritage.org.uk/visit/places/rochester-castle/history/significance/>
+- **Castle and Lowy of Tonbridge** (`barony_tonbridge`): <https://heritage.kent.gov.uk/Monument/MKE36749>, <https://inquisitionspostmortem.ac.uk/view/inquisition/18-804/813.html>, <https://www.kentarchaeology.org.uk/journal/16/tonbridge-castle-and-its-lords>
+- **Antient Town of Rye** (`barony_rye`): <https://ryetowncouncil.gov.uk/our-town-council/>, <https://www.visit1066country.com/destinations/rye/history>
+- **City of Chichester** (`county_arundel`): <https://westsussexrecordofficeblog.com/2020/08/18/west-sussex-unwrapped-week-10-chichester/>, <https://ipm-os.kdl.kcl.ac.uk/view/inquisition/22-520/index.html>
+- **Barony and honour of Lewes** (`barony_lewes`): <https://www.southdowns.gov.uk/wp-content/uploads/2023/10/Agenda-Item-7_Appendix-2-optimised.pdf>, <https://sussexpast.co.uk/short-history/lewes-castle/>
+- **Honour of Arundel** (`barony_arundel`): <https://www.arundelcastle.org/castle-history/>, <https://historicengland.org.uk/listing/the-list/list-entry/1000170>
+- **Town and County of Southampton** (`county_hampshire`): <https://www.sheriffsofenglandandwales.org/southampton>, <https://kar.kent.ac.uk/60522/1/92FinalCorrectedMaster.pdf>
+- **Lordship of the Isle of Wight** (`barony_carisbrooke`): <https://www.english-heritage.org.uk/visit/places/carisbrooke-castle/history/>, <https://historicengland.org.uk/listing/the-list/list-entry/1013870/>
+- **Episcopal manor of Farnham** (`barony_farnham`): <https://www.farnham-castle.com/history>, <https://www.farnham-castle.com/the-castles-royal-visitors>
+- **Royal castle of Winchester** (`barony_winchester`): <https://historicengland.org.uk/listing/the-list/list-entry/1001959>, <https://historicwinchester.co.uk/our-attractions/the-great-hall-with-westgate-museum/>
+- **Borough of Oxford** (`county_oxford`): <https://museumofoxford.org/oxford-asserts-its-civic-identity-in-1191/>, <https://historicengland.org.uk/listing/the-list/list-entry/1007730?section=official-list-entry>
+- **Manor of Donnington** (`barony_donnington`): <https://www.english-heritage.org.uk/visit/places/donnington-castle/history/>
+- **Lordship of Warkworth** (`county_northumberland`): <https://www.english-heritage.org.uk/visit/places/warkworth-castle-and-hermitage/history/>, <https://historicengland.org.uk/listing/the-list/list-entry/1011649>
+- **Bamburgh castle estate** (`barony_bamburgh`): <https://bamburghbones.org/pre-historic-bamburgh/>, <https://www.northumberland.gov.uk/NorthumberlandCountyCouncil/media/Planning-and-Building/Conservation/Bamburgh-CACA.pdf>
+- **Dunstanburgh castle estate** (`barony_dunstanburgh`): <https://www.english-heritage.org.uk/visit/places/dunstanburgh-castle/history/>
+- **Royal burgh of Edinburgh** (`county_lothian`): <https://scarf.scot/regional/sesarf/9-medieval/9-1-lntroduction/>
+- **Burgh and royal fortress of Berwick** (`county_march`): <https://historicengland.org.uk/listing/the-list/list-entry/1015520>, <https://www.northumberland.gov.uk/NorthumberlandCountyCouncil/media/Planning-and-Building/Conservation/Archaeology/Berwick.pdf>
+- **Dunbar castle estate** (`barony_dunbar`): <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CSM5960>, <https://scarf.scot/regional/sesarf/9-medieval/9-1-lntroduction/>
+- **Royal burgh of Stirling** (`county_stirling`): <https://www.stirlingarchives.scot/2024/01/01/stirling-900-the-origins-of-the-royal-burgh-and-the-special-relationship-with-the-crown/>
+- **Regality of Glasgow** (`county_hamilton`): <https://theses.gla.ac.uk/78777/1/13804140.pdf>, <https://theglasgowstory.com/story/?id=TGSAA06>
+- **Royal castle of Rothesay** (`barony_rothesay`): <https://www.historicenvironment.scot/visit/all/rothesay-castle/history-and-stories/>
+- **Royal burgh of Ayr** (`county_kennedy`): <https://archive.south-ayrshire.gov.uk/committee/CommitteePapers2021/Leadership%20Panel/30%20November%202021%20%28Special%29/Item%203a%20-%20REP%2020211130%20LP%20S%20City%20Status%20Bid%20%281%29.pdf>
+- **Royal burgh of Dumfries** (`county_maxwell`): <https://www.futuremuseum.co.uk/collections/life-work/social-history/government/the-royal-burgh-of-dumfries/oldest-surviving-copy-of-dumfries-burghs-royal-charter>
+- **Lands of Caerlaverock** (`barony_caerlaverock`): <https://caerlaverock.com/the-estate/about/>
+- **Threave castle estate** (`barony_threave`): <https://www.historicenvironment.scot/visit/all/threave-castle/history-and-stories/>, <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CSM90301>
+- **Hermitage castle estate** (`barony_angus`): <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CSM90161>, <https://www.historicenvironment.scot/visit/all/hermitage-castle/history-and-stories/>
+- **Episcopal burgh of St Andrews** (`county_fife`): <https://collections.st-andrews.ac.uk/collection/records-of-the-burgh-of-st-andrews/2029969>
+- **Lochleven castle estate** (`barony_lochleven`): <https://blog.historicenvironment.scot/2020/05/lochleven-prison-island/>
+- **Royal burgh of Dundee** (`county_crawford`): <https://www.dundeecity.gov.uk/dundees-civic-history/royal-authority-to-use-the-title-lord-provost>
+- **Royal burgh of Perth** (`county_ruthven`): <https://www.pkc.gov.uk/media/14401/City-Status-Bid-document/pdf/City_Status_Bid_document.pdf?m=1474990460393>
+- **Kilchurn castle estate** (`county_argyll`): <https://www.historicenvironment.scot/visit/all/kilchurn-castle/>, <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CSM90179>
+- **Royal burgh of Aberdeen** (`county_marischal`): <https://committees.aberdeencity.gov.uk/documents/s22406/Freedom%20of%20the%20City.pdf>
+- **Dunnottar castle estate** (`barony_dunnottar`): <https://her.aberdeenshire.gov.uk/Monument/MAB42414/>, <https://www.dunnottarcastle.co.uk/history>
+- **Kildrummy castle estate** (`barony_mar`): <https://www.historicenvironment.scot/visit/all/kildrummy-castle/history-and-stories/>, <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CSM90181>
+- **Royal burgh of Elgin** (`county_moray`): <https://scarf.scot/national/medieval/3-lifestyles-and-living-spaces/3-6-commerce-industry-and-manufacturing/>
+- **Lordship of Strathbogie** (`barony_huntly`): <https://portal.historicenvironment.scot/apex/f?p=PORTAL%3Adocument%3A0%3A%3A%3A%3ADOCREF%3A600001992>, <https://her.aberdeenshire.gov.uk/Monument/MAB13616/>
+- **Royal burgh of Inverness** (`county_westfield`): <https://scarf.scot/regional/higharf/highland-archaeological-research-framework-case-studies/medieval-inverness/>
+- **Lordship of Urquhart** (`barony_urquhart`): <https://app-hes-pubs-prod-neu-01.azurewebsites.net/api/file/f3e38f4a-441a-4ad0-b933-a7b700db0b3b>, <https://www.historicenvironment.scot/visit/all/urquhart-castle/history-and-stories/>
+- **Thanage of Calder** (`barony_cawdor`): <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CLB1728>, <https://www.cawdor.com/history>
+- **Town of Kirkwall** (`county_orkney`): <https://journals.socantscot.org/index.php/psas/article/download/9089/9057/9043>, <https://app-hes-pubs-prod-neu-01.azurewebsites.net/api/file/05bbb8b9-2b39-42ef-924f-aaf400ecce67>, <https://araltes.org/RECORDS%20OF%20THE%20EARLDOM%20OP%20ORKNEY.pdf>
+- **Wick settlement estate** (`barony_caithness`): <https://scarf.scot/regional/higharf/medieval/9-3-settlement-evidence/9-3-3-burghs/>, <https://www.historicenvironment.scot/visit/all/castle-of-old-wick/>
+- **Dirlot castle estate** (`barony_dirlot`): <https://her.highland.gov.uk/Monument/MHG1308>
+- **Dornoch episcopal settlement** (`county_sutherland`): <https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-310-1/dissemination/pdf/sair28.pdf>, <https://soas-test.journals.ed.ac.uk/index.php/psas/article/download/7598/7566>
+- **Finlaggan demesne** (`county_islay`): <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CSM2325>, <https://www.ssns.org.uk/news/finlaggan-history-significance/>
+- **Dunyvaig castle estate** (`barony_dunyvaig`): <https://www.cambridge.org/core/journals/antiquity/article/seal-matrix-of-sir-john-campbell-and-the-struggle-for-dunyvaig-castle-on-the-isle-of-islay/080888183BDA62847AE6B0847859E21B>
+- **Tarbert castle estate** (`barony_knapdale`): <https://archaeologydataservice.ac.uk/catalogue/adsdata/arch-352-1/dissemination/pdf/vol_151/9_PSAS_151_p175-202.pdf>
+- **Lands of Duart** (`barony_duart`): <https://duartcastle.com/maclean-clan/history/>, <https://deriv.nls.uk/dcn23/1266/1366/126613661.23.pdf>
+- **Stornoway settlement estate** (`county_lewis`): <https://her.cne-siar.gov.uk/Monument/MWE4331>, <https://i.rcahms.gov.uk/canmore-pdf/WP00004578.pdf>
+- **Dunvegan castle estate** (`barony_dunvegan`): <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CGDL00164>
+- **Lands of Barra** (`barony_barra`): <https://deriv.nls.uk/dcn23/1266/1366/126613661.23.pdf>, <https://journals.socantscot.org/index.php/psas/article/view/9850>
+- **Royal burgh of Dingwall** (`county_ross`): <https://her.highland.gov.uk/api/LibraryLink5WebServiceProxy/FetchResourceFromStub/9-9-8-0-3_75120a86a317ba3-99803_e1a6e7c8111a5f6.pdf>, <https://her.highland.gov.uk/Monument/MHG8429>
+- **Lands of Balnagown** (`barony_balnagowan`): <https://portal.historicenvironment.scot/apex/f?p=1505%3A300%3A%3A%3A%3A%3AVIEWTYPE%2CVIEWREF%3Adesignation%2CGDL00046>, <https://www.rossandcromartyheritage.org/wp-content/uploads/2021/01/The-History-of-a-Highland-Parish.pdf>
+- **Lands of Foulis** (`barony_foulis`): <https://her.highland.gov.uk/Monument/MHG8948>, <https://clanmunroassociation.org.au/clan-history/foulis-castle/>
+- **Eilean Donan castle estate** (`barony_kintail`): <https://scarf.scot/regional/higharf/highland-archaeological-research-framework-case-studies/eilean-donan-castle/>
+- **Lands of Sleat** (`barony_sleat`): <https://deriv.nls.uk/dcn23/1266/1366/126613661.23.pdf>, <https://academic.oup.com/oxford-dictionary-of-national-biography/reference/63486/reference-article-abstract/580998820>
+- **Inverlochy settlement estate** (`county_lochiel`): <https://www.historicenvironment.scot/visit/all/inverlochy-castle/history-and-stories/>, <https://deriv.nls.uk/dcn23/1266/1366/126613661.23.pdf>
+- **Tioram castle estate** (`barony_moidart`): <https://deriv.nls.uk/dcn23/1266/1366/126613661.23.pdf>, <https://archaeologydataservice.ac.uk/archiveDS/archiveDownload?t=arch-352-1%2Fdissemination%2Fpdf%2Fvol_144%2F144_0265_0276.pdf>
+- **Lands of Ardnamurchan** (`barony_ardnamurchan`): <https://deriv.nls.uk/dcn23/1266/1366/126613661.23.pdf>, <https://archaeologydataservice.ac.uk/archiveDS/archiveDownload?t=arch-352-1%2Fdissemination%2Fpdf%2Fvol_144%2F144_0265_0276.pdf>
+
+Related: [[feudal-titles-overview]]

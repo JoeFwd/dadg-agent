@@ -65,6 +65,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[feudal-title-transfer-decision]] (decision): Decision: occupying a seat does not move the dignity; only grant, gift, barter, a king's decision, or an administrative change transfers it.
 - [[king-keeps-open-fiefs]] (decision): Decision (2026-10-26): the post-capture claimant vote is removed; the king keeps open fiefs, and leaving or destroyed clans keep no claim.
 - [[feudal-titles-overview]] (reference): Overview of the DADG feudal title system: static de jure tree from config, hero holders, occupants, claims, succession, encyclopedia UI.
+- [[title-historical-references]] (reference): The historical references behind each 1471 territorial title, moved off the encyclopedia pages on 2026-11-08; the plan JSON stays the source of truth
 
 ## feature-other
 

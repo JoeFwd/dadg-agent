@@ -134,6 +134,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 ## scenes-navmesh
 
 - [[dadg-bridge-relocation-no-gos]] (decision): Why relocating the Wye/Oxford Roman piers and adding a Great Ouse approach were all judged no-go (grades 50+ deg, navmesh floating above terrain, nested town assembly).
+- [[dadg-editor-material-warning-audit]] (incident): Read-only audit of 115 editor material warnings; 108 Scottish submeshes reference two Scenes materials from Map, with separate empty primary bindings and ship secondary references.
 - [[dadg-joust-v3-editor-fixes]] (incident): dadg_joust_v3 editor problems 2026-08-17/18 - orphan group GUID crash (4 barrier entities from the v2 donor) and terrain_ed.bin repaired by folding compiled heights back in
 - [[dadg-joust-v3-terrain-paint]] (howto): How the widened joust arena was built: touched WGHT nodes, flatten height, feathering, filling weight deficits, donor hash recheck.
 - [[dadg-main-map-bridge-navmesh-final-state]] (incident): Final deployed state of the DADG Main_map navmesh bridge/river work (2026-09-29) - 31 decks, counts, gates passed and what remains.

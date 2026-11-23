@@ -1,5 +1,5 @@
 name: dadg-agent
-version: 0.3.2
+version: 0.3.3
 description: DellarteDellaGuerra layer on top of bannerlord-agent - project context, DADG settings, Scotland placement skill and the DADG knowledge brain.
 type: hybrid
 targets:

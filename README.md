@@ -29,7 +29,7 @@ The DADG Core repo depends on a release tag, so it installs exactly what is ship
 ```yaml
 dependencies:
   apm:
-    - JoeFwd/dadg-agent#v0.3.2
+    - JoeFwd/dadg-agent#v0.3.3
 ```
 
 `apm install` then pulls `JoeFwd/bannerlord-agent` at the tag pinned here. Core also mounts this

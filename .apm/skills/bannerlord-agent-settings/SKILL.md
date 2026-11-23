@@ -72,7 +72,8 @@ Never trust a command's "success". Verify the changed object directly.
 
 | Install | Status |
 |---|---|
-| `Mount & Blade II Bannerlord` | live 1.4.x; DADG builds deploy here |
+| `Mount & Blade II Bannerlord` | live 1.5.7 (War Sails 1.3.7); DADG builds deploy here |
+| `Mount & Blade II Bannerlord-v1.4` | 1.4.8; builds from its own Core checkout deploy here (`GameFolder` is positional) |
 | `Mount & Blade II Bannerlord-v1.3` | obsolete |
 | `Mount & Blade II Bannerlord-v1.2` | obsolete |
 

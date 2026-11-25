@@ -97,7 +97,23 @@ The analysis that came before the test:
   earlier crash came from an incomplete bake that stopped at index 137/139.
 - PASS: water and river render.
 - PARTIAL: 96 caravans moved over 6 days with no exceptions.
-- NOT YET: London town menu (no shipyard), a raid, a battle, island travel, and a WS regression run.
+- PASS (later runs): London town menu has no shipyard. Island travel works both ways for the player
+  and AI through port landings. WS regression passes (ports, shipyard, sailing).
+- Kisimul (a castle on its own islet, no `port_pos`) was walled in. `build_port_sea.py` now gives
+  every portless settled island one `landing_only` landing at the shore nearest its gate.
+- Wall breach: an order to an unreachable point leaves `_pathMode=false`. Vanilla `DoAIMove` then
+  steers straight at the target and accepts any step onto a face of the same island. The generated
+  sea shares the land's island, so that step crossed the thin MOUNTAIN strip. After the crossing,
+  `IsCurrentlyAtSea=true` sent the London encounter to NavalDLC's missing `port_menu` (an NRE in
+  `MenuContext.HandleStates`). Fix in `CampaignNavigationSelector`, applied only without NavalDLC:
+  - A `DoAiPathMode` postfix clamps the no-path target with
+    `GetLastPointOnNavigationMeshFromPositionToDestination`.
+  - The clamp is skipped when the party already stands on invalid terrain. Otherwise UnderBridge
+    parties froze in place.
+  - The `IsCurrentlyAtSea` setter is forced to false.
+  
+  Evidence for the fix is `runtime-evidence/no-warsails-island-travel.feature.md` (runs 3–4).
+- NOT YET: a raid and a battle.
 - Noise that is not caused by this change: the EquipmentRosters.xsd `battle`/`siege`/`pool` errors
   appear in WS runs too.
 

@@ -129,6 +129,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[dadg-seaborne-village-raid-migration]] (reference): State of DADG seaborne village raid scenes - 73 of 426 villages sea-reachable, Grimsby variant installed, Southwark and Thorne need redesign.
 - [[dadg-vanilla-override-pattern]] (reference): How DADG replaces vanilla kingdoms/clans/settlements - pre-XSLTs strip ALL vanilla first, so vanilla ids (sturgia/vlandia/battania) are safely reused; append to the single registered dadg_*.xml per type
 - [[village-optimisation-2026-10-11]] (reference): Main_map village template rewrite on add-warsails: 280 English villages reduced, scene entities 72,559 to 52,679; visuals and FPS unverified.
+- [[non-warsails-build-analysis]] (decision): One Map module for WS and non-WS - Optional NavalDLC dependency + Core NavalXmlSelector drops either the naval XMLs or the dadg_no_naval_* strip XSLTs (ports, shipyards, port_pos, culture naval refs) + Codex port-sea NoWarSails scene/cache. Committed on feature/no-warsails; map load + water pass live.
 - [[war-sails-main-map-migration-plan]] (decision): Plan to migrate DADG's campaign map to War Sails v1.2.8 (plan only, not executed in the sources).
 
 ## scenes-navmesh

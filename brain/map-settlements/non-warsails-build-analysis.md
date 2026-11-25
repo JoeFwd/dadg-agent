@@ -113,6 +113,13 @@ The analysis that came before the test:
   - The `IsCurrentlyAtSea` setter is forced to false.
   
   Evidence for the fix is `runtime-evidence/no-warsails-island-travel.feature.md` (runs 3–4).
+- The variant folder ships only `navmesh.bin`. Without NavalDLC, `CampaignNavigationSelector`
+  copies the other `Main_map` files into it before `Scene.Read`, renaming the xscene root. Each copy
+  keeps its source's write time, and a file is recopied whenever the two times differ. Verified live
+  (run 5): the first load copies about 36 MB in about 5 s, and a reload copies nothing.
+- A runtime navmesh swap (`ClearNavMesh` + `ImportNavigationMeshPrefab`) is unproven. The import is
+  used only for mission prefabs (dynamic, ID-shifted faces). `SetNavMeshRegionMap` is applied before
+  `Read`, and `SettlementPositionScript.OnInit` reads the cache and its CRC during `Read`.
 - NOT YET: a raid and a battle.
 - Noise that is not caused by this change: the EquipmentRosters.xsd `battle`/`siege`/`pool` errors
   appear in WS runs too.

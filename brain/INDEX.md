@@ -1,5 +1,7 @@
 # DADG Brain
 
+- [[dadg-ws-campaign-ship-click-target]] (incident): DADG hull physics moved onto body_mesh to repair zero-size campaign click targets; geometry preserved, targeted checks passed, fresh launch pending because the live campaign cannot save.
+
 One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; browse by topic below.
 
 ## banners-clans

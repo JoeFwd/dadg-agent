@@ -1,6 +1,6 @@
 # DADG War Sails ship authoring in the native editor
 
-Use this reference for the DADG cog, carrack, and English boat conversion. The current status is in `../../DellarteDellaGuerraMap/HANDOFF.md` relative to Core `src`; read it before continuing. All ship sources, tools, drafts and audit evidence live in Map `Tools/WarSailsShips/`. Package paths below are relative to Core `src`. The official [War Sails ship creation guide](https://moddocs.bannerlord.com/war-sails/ship_creation/) describes the gameplay requirements.
+Use this reference for the DADG cog, carrack, and English boat conversion. Ship facts and current pointers are in the brain note `dadg-ws-custom-ships-conversion`. Map `HANDOFF.md` is stale (2026-09-29). The Map `Tools/WarSailsShips/` authoring package (scripts, drafts, audits) has been removed. Every `Tools/WarSailsShips/...` path below resolves only in Map git commit `776ac28`: `git -C ../../DellarteDellaGuerraMap show 776ac28:Tools/WarSailsShips/<path>`. Blender sources stay in Map `AssetSources`. Package paths below are relative to Core `src`. The official [War Sails ship creation guide](https://moddocs.bannerlord.com/war-sails/ship_creation/) describes the gameplay requirements.
 
 ## Launch and asset discovery
 
@@ -84,4 +84,4 @@ With the final hull visual present, enable **Mock Generation** on root `Volume_g
 
 Imported visual meshes, collision shapes, and sail geometry are distinct from an assembled playable ship. Resolve each nested prefab in the editor, then fit hull-specific collision, waterline, mass and buoyancy volumes; sail controls, cloth and furling; pilot, crew and boarding points; water clipping; and a deck navmesh saved through the editor. Calibrate to the actual DADG hull rather than copying native coordinates. Only then activate mission ship, hull, slot, upgrade and culture registrations and test sailing, turning, furling, boarding, AI traversal and save/reload in game. Keep inactive registration drafts inactive until those checks pass.
 
-Use `../../DellarteDellaGuerraMap/Tools/WarSailsShips/README.md` and `runtime-validation.md` for detailed evidence, with Map `HANDOFF.md` taking precedence for current status and remaining work. An offline TPAC audit, a native Resource Browser check, and a game mission test establish different facts; report each separately.
+Detailed evidence was in `Tools/WarSailsShips/README.md` and `runtime-validation.md` (now only in Map git `776ac28`). An offline TPAC audit, a native Resource Browser check, and a game mission test establish different facts; report each separately.

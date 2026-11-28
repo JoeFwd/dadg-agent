@@ -16,7 +16,7 @@ Related: [[ws-sail-cloth-params-frozen]]
 
 ## Details moved from generic notes
 
-- Sail cloth: full table in `DellarteDellaGuerraMap/Tools/WarSailsShips/diagnostics/sail-cloth-vs-vanilla-2026-10-02.md` (Map commits e19710f and 844e5e9); generic rule in [[ws-sail-cloth-params-frozen]].
-- Sail vertex paint: authoring script `Tools/WarSailsShips/external-authoring/data/dadg_ws_remaining_sails_v1.py` lines 63-81 writes A=0 only for the top band and never B (reported by the user 2026-10-03); generic rule in [[ws-sail-vertex-paint-pins]].
+- Sail cloth: full table in `Tools/WarSailsShips/diagnostics/sail-cloth-vs-vanilla-2026-10-02.md`. That folder has been removed; read the file from Map git `776ac28` (Map commits e19710f and 844e5e9). Generic rule in [[ws-sail-cloth-params-frozen]].
+- Sail vertex paint: authoring script `Tools/WarSailsShips/external-authoring/data/dadg_ws_remaining_sails_v1.py` (Map git `776ac28`) lines 63-81 writes A=0 only for the top band and never B (reported by the user 2026-10-03); generic rule in [[ws-sail-vertex-paint-pins]].
 
 Generic rule: [[war-sails-sail-cloth-requirements]], [[ws-ship-navmesh-boarding-face-rules]]

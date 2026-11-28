@@ -103,8 +103,8 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 
 ## incidents-crashes
 
+- [[dadg-deployment-banner-effect-id]] (incident): Confirmed deployment tooltip NRE from six banners with an obsolete effect id; seven XML references need correction, fix pending.
 - [[dadg-companion-introduction-missing-capital]] (incident): Companion town_ES4 NRE bypass and setting dialogue overhaul implemented; tests pass, DLL deployment and real save round trip await game restart.
-
 - [[dadg-coventry-navmesh-crash-misdiagnosis]] (incident): The Coventry scene navmesh crash was chased by byte-diffing compressed data; root cause never established. UNFIXED, worked around by restoring the stable file.
 - [[dadg-gabs-launch-setup]] (reference): DADG's GABS launch profile - Standalone profile with module list and GABP env, committed on feature/add-church (7e03cb0); War Sails saves need Standalone.WarSails
 - [[dadg-generated-test-scene-terrain-node-crash]] (incident): A generated DADG battle test scene crashed at load from stale/partial xscene terrain node records. FIXED by rebuilding node records and all 16 weightmap levels.
@@ -113,6 +113,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[disguise-naked-empty-defaultequipment]] (incident): The disguised-hero equipment roster resolves with one set but DefaultEquipment is empty, so the player spawns naked; cause unknown.
 - [[dadg-ws-hook-item-stripped]] (incident): FIXED 2026-10-25 - DADG's dadg_pre_native_items.xslt stripped NavalDLC's "hook" item, causing the War Sails sea-battle FMOD hang; hook (plus burning_arrows/bolts and ship grapeshot) whitelisted
 - [[warsails-ship-crash-chain-2026-09-30]] (incident): Sequence of War Sails crashes 2026-09-30 to 2026-10-25 and what fixed each.
+- [[dadg-hideout-troops-naked-stealth-pool]] (incident): Troops spawn naked in hideouts. ExpandedTemplate maps Stealth mode to a stealth-only pool, DADG has no stealth rosters, and nothing fell back to battle gear. FIXED (ExpandedTemplate f6ac56a)
 
 ## items-crafting
 
@@ -128,6 +129,7 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 
 ## map-settlements
 
+- [[dadg-disabled-english-hideout-camps]] (incident): Ten English camp models had commented settlement definitions; coastal pirate culture also blocks native land-hideout spawning.
 - [[dadg-main-map-geometry-and-protected-england-faces]] (reference): DADG Main_map geometry, water levels, and the rule that England's hand-authored navmesh faces [0,7599) must stay byte-identical.
 - [[dadg-map-capsule-naming-and-scotland-positions]] (reference): DADG naming for settlement capsules in the Main_map scene, and the verified invariant across 160 Scotland settlements
 - [[dadg-navmesh-backport-london-hideout]] (incident): A develop-branch London and hideout-spawn navmesh fix was reapplied onto the complete navmesh with only protected-region-safe edits. FIXED.
@@ -147,7 +149,9 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 - [[dadg-navmesh-studio-settlement-placement]] (reference): DADG settlement-placement specifics of the navmesh studio - footprint radii town 8.475 / castle 3.572 / village none; only dadg_sco_* movable; water oracle height > 10.0
 - [[dadg-rochester-castle-scene-spec]] (decision): Design spec for dadg_Rochester_castle: real dimensions, scale, asset mapping, and the worldmap-icon trap.
 - [[dadg-roman-bridge-terrain14-banks]] (incident): UNFIXED - five Roman town bridge decks (Great Ouse, London, Severn, Wye, Oxford) sit between terrain-14 RuralArea banks that land parties cannot use; plus one London Gothic pier with no confirmed span.
+- [[dadg-scene-season-audit]] (reference): 2026-11-28 season audit of production scenes - 8 with no seasonal entities, 17 partial (mostly no winter), southwark_navalraid all-249 bug; terrain seasonal everywhere but tournaments
 - [[dadg-siege-scene-reference-castles]] (reference): Reference siege scenes and navmesh scale in DADG: Clun and Dartmouth as oracles, native scenes are 5-30x larger.
+- [[dadg-ws-custom-ships-conversion]] (reference): The DADG English boat, kogge and carrack: scale, yaw, offsets, mass, rudder pivots and drivers, and the staged SDF. Tools/WarSailsShips was removed; recover it from Map git 776ac28
 - [[dadg-ws-kogge-carrack-deck-navigability]] (incident): 2026-10-23 - kogge and carrack upper decks made AI-walkable (stair collision + conforming navmeshes, carrack 353 / kogge 228 faces); not live-tested; steep kogge stairs, carrack rail clip, 2 boarding ids; swivel gun in progress
 - [[dadg-ws-ship-navmesh-and-climber-fixes]] (incident): FIXED 2026-10-01 - DADG ship climbers re-yawed to the vanilla frame and ship navmeshes rebuilt coarse (kogge 94 / carrack 24 / boat 13 faces); carrack has no stairs to its upper decks so they are excluded; open-sea campaign navmesh stripped on purpose
 - [[dadg-ws-ship-reimport-state]] (reference): 2026-10-02 state of DADG War Sails ship mesh reimports - slot 1 now Map dadg_ws_* aliases, slot 2 stale; English boat prefab still on v1 sail and old body

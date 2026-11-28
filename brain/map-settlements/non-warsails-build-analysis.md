@@ -11,11 +11,11 @@ updated: 2026-11-25
 # Non-War Sails build: one Map module for both
 
 Status: COMMITTED 2026-11-25 on `feature/no-warsails` in Core and Map. Spawns modules are out of scope.
-Travel without WS is Codex's port-sea variant: `tools/non_warsails_navigation` generates
+Travel without WS is Codex's port-sea variant: `Modules/Scripts/non_warsails_navigation` (DADG Scripts repo) generates
 `SceneObj/dadg_main_map_no_warsails` (sea faces turned into `Fording`, an opening at each of the 135
 ports) and bakes `settlements_distance_cache_NoWarSails.bin`. Core's `CampaignNavigationSelector`
 loads both when NavalDLC is absent and checks the cache's scene/navmesh CRCs. Regenerate with
-`tools/non_warsails_navigation/GENERATE_CACHE.md` after every `Main_map` or `settlements.xml` edit.
+`Scripts/non_warsails_navigation/GENERATE_CACHE.md` after every `Main_map` or `settlements.xml` edit.
 An interrupted bake leaves `Modules/DADG.CrossingCacheBake` behind, and the next bake refuses to start
 until it is deleted.
 
@@ -141,3 +141,10 @@ The analysis that came before the test:
    - the existing WS save still loads
 
 Related: [[war-sails-main-map-migration-plan]], [[warsails-main-map-migration-contract]], [[dadg-vanilla-override-pattern]], [[bannerlord-xml-load-abort-semantics]], [[ws-open-sea-navmesh-stripped]], [[ws-fmod-sail-sound-hang]]
+
+## FPS dip on unreachable targets (probe 2026-11-25)
+
+Ordering the player to Ireland (unreachable without War Sails) drops fps 170 → 45-60, standing still included:
+vanilla retries the failed path every frame ([[failed-party-path-retried-every-frame]]), and each failed A* over
+the 31k-face generated sea costs ~11 ms (≈20 ms max, vs ≈3 ms worst with War Sails). The shore clamp
+(`StopDirectMoveAtShore`) costs ~0.1 ms/frame and is not the cause. Not fixed yet.

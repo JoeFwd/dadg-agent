@@ -22,4 +22,4 @@ Consequences: the AI assaults only once preparations are complete and it judges 
 
 Status: built and unit-tested, not yet runtime-verified.
 
-Related: [[private-wars-overview]], [[private-war-prisoner-retention]], [[king-keeps-open-fiefs]], [[siege-vanilla-1-4-facts]], [[private-wars-manual-test-howto]]
+Related: [[private-wars-overview]], [[private-war-prisoner-retention]], [[claimant-vote-outside-private-wars]], [[siege-vanilla-1-4-facts]], [[private-wars-manual-test-howto]]

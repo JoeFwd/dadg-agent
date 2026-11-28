@@ -14,6 +14,6 @@ Originally the title followed the seat instantly, so a foreign conqueror became 
 
 Chosen: "Option C" deferred transfer. `OnSettlementOwnerChanged` maps the engine's detail ([[settlement-owner-change-details]]) to `SeatTransferKind`: Conquest (BySiege, ByRebellion, and ByKingDecision to an outsider) marks `OccupantClanId` and `ContestedSinceDay`; Grant (ByGift, ByBarter, ByKingDecision within the kingdom) moves the dignity and gives the old holder a Strong Conquest claim (id `{titleId}:{clanId}:conquest`); Administrative (ByLeaveFaction, ByClanDestruction, Default) moves it with no claim. A vacant title is simply taken. Peace no longer regularises occupation (cession removed 2026-10: an occupier only occupies).
 
-Deleted afterwards: the attainder decision, petitions and tension, and the explicit grace clock, because the claimant election delayed same-kingdom transfers; that election itself is gone since 2026-10-26 ([[king-keeps-open-fiefs]]). Open: cross-kingdom finalisation when only a private war links the crowns ([[cross-border-marches-decisions]]).
+Deleted afterwards: the attainder decision, petitions and tension, and the explicit grace clock, because the claimant election delays same-kingdom transfers; that election runs except on private-war captures ([[claimant-vote-outside-private-wars]]). Open: cross-kingdom finalisation when only a private war links the crowns ([[cross-border-marches-decisions]]).
 
 Related: [[feudal-titles-overview]], [[kingdom-decision-lifecycle]]

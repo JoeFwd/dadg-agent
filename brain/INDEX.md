@@ -102,6 +102,8 @@ One durable lesson per note. Grep `**/*.md` for a symptom, API or file name; bro
 
 ## incidents-crashes
 
+- [[dadg-companion-introduction-missing-capital]] (incident): Companion town_ES4 NRE bypass and setting dialogue overhaul implemented; tests pass, DLL deployment and real save round trip await game restart.
+
 - [[dadg-coventry-navmesh-crash-misdiagnosis]] (incident): The Coventry scene navmesh crash was chased by byte-diffing compressed data; root cause never established. UNFIXED, worked around by restoring the stable file.
 - [[dadg-gabs-launch-setup]] (reference): DADG's GABS launch profile - Standalone profile with module list and GABP env, committed on feature/add-church (7e03cb0); War Sails saves need Standalone.WarSails
 - [[dadg-generated-test-scene-terrain-node-crash]] (incident): A generated DADG battle test scene crashed at load from stale/partial xscene terrain node records. FIXED by rebuilding node records and all 16 weightmap levels.

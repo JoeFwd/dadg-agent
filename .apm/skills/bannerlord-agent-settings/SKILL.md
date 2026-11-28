@@ -16,10 +16,22 @@ These are the project settings that the generic `bannerlord-agent` skills refer 
 - `project_path`: `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/DellarteDellaGuerra.Core/src`.
   Pass it on every JetBrains MCP call. The `&` is literal; never HTML-escape it.
 - Run configuration: ask the user (see `bannerlord-gabs-start`). The GABS-enabled profiles in
-  `DellarteDellaGuerra.Integration/Properties/launchSettings.json` are `Standalone` and
-  `Standalone.WarSails` (adds `NavalDLC`). Both set `GABP_SERVER_PORT`, `GABP_TOKEN`,
-  `GABS_GAME_ID` and `GABS_BRIDGE_PATH`; `bridge.json` must match the chosen profile's port
-  and token.
+  `DellarteDellaGuerra.Integration/Properties/launchSettings.json` are `Standalone`,
+  `Standalone.NoWarSails`, `Standalone.WarSails` (adds `NavalDLC`) and
+  `Standalone.WarSails.Audit` (adds `CampaignAudit`). They all set `GABP_SERVER_PORT`,
+  `GABP_TOKEN`, `GABS_GAME_ID` and `GABS_BRIDGE_PATH`, and `bridge.json` must match the chosen
+  profile's port and token.
+- GABS slots, for parallel playtests (see "Parallel games" in `bannerlord-gabs-start`):
+
+  | Slot | Profiles | Port | Game id | Bridge |
+  |---|---|---|---|---|
+  | 1 | all the profiles above | 4825 | `bannerlord` | `~/.gabs/bannerlord/bridge.json` |
+  | 2 | `Standalone.NoWarSails.Slot2`, `Standalone.WarSails.Slot2` | 4826 | `bannerlord2` | `~/.gabs/bannerlord2/bridge.json` |
+
+  Both ids are registered in `~/.gabs/config.json`. A second agent playtesting at the same
+  time uses slot 2 and passes `gameId: "bannerlord2"` on every GABS call. Other mods'
+  test games (for example CustomSpawns builds) also default to 4825, so check the port is
+  free before launching.
 - CLR exception breakpoints: `src/.rider-debugger-settings`, enforced by the
   rider-clr-exception-override Rider plugin. Edit the exception list there, not in Rider.
 - Safe per-frame evaluation anchor:
